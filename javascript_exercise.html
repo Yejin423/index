@@ -1,0 +1,42 @@
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div>
+            <h2 id='home'><a href="index.html">
+                    <img src="homeimage.png">
+                    home</a></h2>
+    </div>
+    <div>
+        <p id="demo"> watch here!</p>
+        <img id="picture" src="image/ren.jpg" height="200">
+            <button onmouseover="func1()">button 1</button>
+            <button onmouseover="func2()">button 2</button>
+            <script>
+            demo=document.getElementById("demo")
+            picture = document.getElementById("picture")
+            function func1(){
+                
+                demo.innerHTML="button 1! click"
+                demo.style.fontSize ="10px"
+                demo.style.color="black"
+                demo.style.backgroundColor="yellow"
+                picture.src = "image/leaf.jpg"
+                
+
+            }
+            function func2(){
+                
+                demo.innerHTML ="button 2! click"
+                demo.style.fontSize ="20px"
+                demo.style.color="white"
+                demo.style.backgroundColor="black"
+                picture.src = "image/kitten.jpg"
+            }
+                </script>
+                <noscript>Sorry, yout browser does not support JavaScript!</noscript>
+
+    </div>
+</body>
