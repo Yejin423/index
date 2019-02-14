@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+
+        <style>
+             .webtoon{
+                float:left;
+                position: relative;
+                margin: 4px;
+            }
+        #webtoon::after{
+            clear:both;
+            }
+        .webtoon .auther{
+            font-weight: lighter;
+        }
+
+        .webtoon_intro{
+                position: relative;
+                color: white;
+            }
+
+        .tag{
+            background-color: green;
+            color:white;
+            position:absolute;
+            top:0;
+            left:0;
+        }
+        .webtoon_intro span{
+            position: relative;
+            top:8;
+            left:16;
+
+        }
+        .webtoon_intro p{
+            position: relative;
+            top:8;
+            left:16;
+
+        }
+            </style>
+    </head>
+    <body>
+        <h1>web-toon</h1>
+        <div>
+            <div class="webtoon webtoon_intro">
+
+                <img src="https://s.pstatic.net/static/www/mobile/edit/2017/0312/mobile_164734361967.png" width="166" height="185" alt="" class="tt_m">
+                <span>웹툰</span>
+                <p class="intro">매일 매일 새로운 재미<br>
+                네이버 웹툰 바로가기</p>
+            </div>
+
+            <div class="webtoon">
+                <img src="https://s.pstatic.net/static/www/mobile/edit/2019/0213/mobile_164952338985.jpg" width="166" height="108" alt="" class="td_m">
+                <p class="intro">미래가 자꾸만 달라져<br>
+                    과거의 뭔가 잘못됐다
+                </p>
+                <p class="author">Save me| bigHit/LICO</p>
+                <span class="tag">BU만화</span>
+            </div>
+            <div class="webtoon">
+                <img src="https://s.pstatic.net/static/www/mobile/edit/2019/0213/mobile_165315834286.jpg" width="166" height="108" alt="" class="td_m">
+                <p>너를 낱낱이<br>
+                    파헤쳐 줄 거야
+                </p>
+                <p class="author">좋아하는 부분|타리</p>
+            </div>
+            <div class="webtoon">
+                <img src="https://s.pstatic.net/static/www/mobile/edit/2019/0213/mobile_165221782663.jpg" width="166" height="108" alt="" class="td_m">
+                <p>나 걔 취향 한번<br>
+                    지대로 캐 볼라구
+                </p>
+                <p class="author">알고있지만|정서</p>
+            </div>
+
+        </div>
+    </body>
+</html>
