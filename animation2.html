@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <h2 id='home'><a href="index.html">
+                    <img src="homeimage.png">
+                    home</a></h2>
+    </head>
+
+    <style>
+            #container {
+              width: 400px;
+              height: 30px;
+              position: relative;
+              background: pink;
+              
+            }
+            #animate1 {
+              width: 30px;
+              height: 30px;
+              position: absolute;
+              background-color: red;
+              left: 370px
+            }
+            #animate2 {
+              width: 30px;
+              height: 30px;
+              position: absolute;
+              background-color: greenyellow;
+              
+            }
+            </style>
+            <body>
+            
+            <p><button onclick="myMove1()">Click Me</button></p> 
+            <p><button onclick="myMove2()">Click Me</button></p> 
+
+            <div id ="container">
+              <div id ="animate1"></div>
+              <div id ="animate2"></div>
+            </div>
+            
+            <script>
+            function myMove1() {
+              var elem1 = document.getElementById("animate1");   
+              var pos = 0;
+              var id = setInterval(frame, 5);
+              function frame() {
+                if (pos == 350) {
+                  clearInterval(id);
+                } else {
+                  pos ++; 
+                
+                  elem1.style.left = pos + "px";  
+                  
+                }
+              }
+            }
+            function myMove2() {
+              var elem2 = document.getElementById("animate2");   
+              var pos = 370;
+              var id = setInterval(frame, 5);
+              function frame() {
+                if (pos == 0) {
+                  clearInterval(id);
+                } else {
+                  pos --; 
+                
+                  elem2.style.left = pos + "px";  
+                  
+                }
+              }
+            }
+            </script>
+
+
+
+
+</body>
+</html>
